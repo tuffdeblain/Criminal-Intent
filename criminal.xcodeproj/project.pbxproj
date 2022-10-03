@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		C52E0AA728E88488005967F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E0AA628E88488005967F1 /* AppDelegate.swift */; };
 		C52E0AA928E88488005967F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E0AA828E88488005967F1 /* SceneDelegate.swift */; };
-		C52E0AAB28E88488005967F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E0AAA28E88488005967F1 /* ViewController.swift */; };
+		C52E0AAB28E88488005967F1 /* AddReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E0AAA28E88488005967F1 /* AddReportController.swift */; };
 		C52E0AAE28E88488005967F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52E0AAC28E88488005967F1 /* Main.storyboard */; };
 		C52E0AB128E88488005967F1 /* criminal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C52E0AAF28E88488005967F1 /* criminal.xcdatamodeld */; };
 		C52E0AB328E8848A005967F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52E0AB228E8848A005967F1 /* Assets.xcassets */; };
 		C52E0AB628E8848A005967F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52E0AB428E8848A005967F1 /* LaunchScreen.storyboard */; };
+		C543E88428E9627700ED5D11 /* ReportsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543E88328E9627700ED5D11 /* ReportsTableController.swift */; };
+		C543E88628E9629300ED5D11 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543E88528E9629300ED5D11 /* ReportCell.swift */; };
+		C57C974B28E9955D00C94D6B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57C974A28E9955C00C94D6B /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C52E0AA328E88488005967F1 /* criminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = criminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52E0AA628E88488005967F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52E0AA828E88488005967F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C52E0AAA28E88488005967F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C52E0AAA28E88488005967F1 /* AddReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReportController.swift; sourceTree = "<group>"; };
 		C52E0AAD28E88488005967F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C52E0AB028E88488005967F1 /* criminal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = criminal.xcdatamodel; sourceTree = "<group>"; };
 		C52E0AB228E8848A005967F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52E0AB528E8848A005967F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C52E0AB728E8848A005967F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C543E88328E9627700ED5D11 /* ReportsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsTableController.swift; sourceTree = "<group>"; };
+		C543E88528E9629300ED5D11 /* ReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		C57C974A28E9955C00C94D6B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,49 @@
 			children = (
 				C52E0AA628E88488005967F1 /* AppDelegate.swift */,
 				C52E0AA828E88488005967F1 /* SceneDelegate.swift */,
-				C52E0AAA28E88488005967F1 /* ViewController.swift */,
-				C52E0AAC28E88488005967F1 /* Main.storyboard */,
-				C52E0AB228E8848A005967F1 /* Assets.xcassets */,
-				C52E0AB428E8848A005967F1 /* LaunchScreen.storyboard */,
+				C543E88228E9625A00ED5D11 /* Controllers */,
+				C543E88728E9629E00ED5D11 /* Views */,
+				C543E88828E962DC00ED5D11 /* StoryBoards */,
+				C543E88928E962E600ED5D11 /* Assets */,
 				C52E0AB728E8848A005967F1 /* Info.plist */,
 				C52E0AAF28E88488005967F1 /* criminal.xcdatamodeld */,
 			);
 			path = criminal;
+			sourceTree = "<group>";
+		};
+		C543E88228E9625A00ED5D11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C52E0AAA28E88488005967F1 /* AddReportController.swift */,
+				C543E88328E9627700ED5D11 /* ReportsTableController.swift */,
+				C57C974A28E9955C00C94D6B /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C543E88728E9629E00ED5D11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C543E88528E9629300ED5D11 /* ReportCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C543E88828E962DC00ED5D11 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C52E0AB428E8848A005967F1 /* LaunchScreen.storyboard */,
+				C52E0AAC28E88488005967F1 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C543E88928E962E600ED5D11 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C52E0AB228E8848A005967F1 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C543E88428E9627700ED5D11 /* ReportsTableController.swift in Sources */,
 				C52E0AB128E88488005967F1 /* criminal.xcdatamodeld in Sources */,
-				C52E0AAB28E88488005967F1 /* ViewController.swift in Sources */,
+				C52E0AAB28E88488005967F1 /* AddReportController.swift in Sources */,
 				C52E0AA728E88488005967F1 /* AppDelegate.swift in Sources */,
+				C57C974B28E9955D00C94D6B /* DetailsViewController.swift in Sources */,
 				C52E0AA928E88488005967F1 /* SceneDelegate.swift in Sources */,
+				C543E88628E9629300ED5D11 /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
